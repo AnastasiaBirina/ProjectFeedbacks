@@ -1,0 +1,3 @@
+gspread
+soup2dict
+pydantic
