@@ -12,7 +12,7 @@ def test_dag_loaded(dagbag):
     assert dagbag.import_errors == {}
     assert dag is not None
     assert len(dag.tasks) == 3  # Проверяем количество задач
-    assert dag.schedule_interval == "0 9 * * *", 'TIME WRONG'
+    assert dag.schedule_interval == "0 8 * * *", 'TIME WRONG'
 
 # Проверяем, что задачи имеют корректные зависимости
 def test_task_dependencies(dagbag):
